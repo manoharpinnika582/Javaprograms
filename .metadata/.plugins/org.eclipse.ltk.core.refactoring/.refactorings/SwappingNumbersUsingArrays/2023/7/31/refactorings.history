@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Reversed&apos; to &apos;PrintArray&apos;&#x0D;&#x0A;- Original project: &apos;SwappingNumbersUsingArrays&apos;&#x0D;&#x0A;- Original element: &apos;Reversed&apos;&#x0D;&#x0A;- Renamed element: &apos;PrintArray&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Reversed&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Reversed.java[Reversed" matchStrategy="1" name="PrintArray" qualified="false" references="true" similarDeclarations="false" stamp="1690779403301" textual="false" version="1.0"/>
+</session>

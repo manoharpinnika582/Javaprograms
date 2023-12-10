@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;OpenWhetherApp.java&apos; to &apos;OpenWeatherApp.java&apos;&#x0D;&#x0A;- Original project: &apos;WhetherApp&apos;&#x0D;&#x0A;- Original element: &apos;OpenWhetherApp.java&apos;&#x0D;&#x0A;- Renamed element: &apos;OpenWeatherApp.java&apos;" description="Rename compilation unit &apos;OpenWhetherApp.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;{OpenWhetherApp.java" name="OpenWeatherApp.java" references="false" stamp="1700023998677" version="1.0"/>
+</session>

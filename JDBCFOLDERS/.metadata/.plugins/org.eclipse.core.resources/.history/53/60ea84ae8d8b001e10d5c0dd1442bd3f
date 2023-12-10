@@ -1,0 +1,15 @@
+
+public class CreateTableDemo {
+	@SuppressWarnings("unused")
+	public static void main(String[] args) {
+		String URL="";
+		String USER_NAME="root";
+		String PASSWORD="manu";
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+			System.out.println("Driver not Found.....");
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,11 @@
+
+public class InsertIntoDemo {
+	public static void main(String[] args) {
+		String URL="jdbc:mysql://localhost:3306/university";
+		String USER_NAME="root";
+		String PASSWORD="manu";
+		try {
+			Class.forName("com.mysql.jc.jdbc.Driver");
+		}
+	}
+}

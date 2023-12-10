@@ -1,0 +1,27 @@
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.Statement;
+
+public class CreateTableDemo {
+	@SuppressWarnings("unused")
+	public static void main(String[] args) {
+		String URL="jdbc:mysql://localhost:3306/university";
+		String USER_NAME="root";
+		String PASSWORD="manu";
+		String CREATE_STUDENT_QUERY="CREATE TABLE STUDENT1 (ID INT,NAME VARCHAR(30),MARKS INT);";
+		try {
+			//1.Load & Register
+			Class.forName("com.mysql.jdbc.Driver");
+			
+			//2.Establish the connection
+			
+		Connection con	 =DriverManager.getConnection(URL, USER_NAME, PASSWORD);
+		
+		Statement stmt=con.ex
+		} catch (ClassNotFoundException | SQLException e) {
+			System.out.println("Driver not Found.....");
+			e.printStackTrace();
+		}
+	}
+}
