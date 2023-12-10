@@ -1,35 +1,94 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
+
 public class Calculator {
-	public static void main(String[] args) {
-		Scanner	scanner=new Scanner(System.in);
-		System.out.println("Entre first number");
-		int a=scanner.nextInt();
-		System.out.println("Enter second number");
-		int b=scanner.nextInt();
-		multiply(a,b);
-		System.out.println("********Main() ended *******");
-	}
-
-	public static void multiply(int a, int b) {	
-		System.out.println("Multiply () started");
-		int product=a*b;
-		System.out.println("Product is= "+product);
-		devide(a,b);
-		System.out.println("********Multiply() ended *******");
-
-	}
-
-	public static void devide(int a, int b) {
-		System.out.println("Devide() Started");
-		double dev=0;
+	public static void main(String[] args) throws Exception{
+		addition();
+		substarct();
 		try {
-			dev=a/b;
+		multiply();
+		}catch(Exception e) {
+			
 		}
-		catch(ArithmeticException e){
-			System.out.println("Exception Handled......");
+		try {
+			division();
+			}catch(Exception e) {
+				
+			}
+		
+	}
+
+	
+
+	public static void addition() {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter two numbers for Addition:");
+		int a=scanner.nextInt();
+		int b=scanner.nextInt();
+		int res=a+b;
+		System.out.println("Addition = "+res);
+	
+	}
+
+	public static void substarct() {
+		Scanner scanner=new Scanner(System.in);
+		
+		System.out.println("Enter two numbers for Substraction:");
+		
+		
+		int sub=0;
+		try {
+			int a=scanner.nextInt();
+			
+			int b=scanner.nextInt();
+		    sub=a-b;
 		}
-		System.out.println("Devision ="+dev);
-		System.out.println("********Devide() ended *******");
+		catch(InputMismatchException e) {
+			System.out.println("Exception Handled ==>");
+		}
+		finally {
+		System.out.println("Substraction = "+sub);
+		}
+	}
+	public static void multiply() throws InputMismatchException{
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter two numbers for Multiplication:");
+		
+		
+		int mul=0;
+		try {
+			int a=scanner.nextInt();
+			int b=scanner.nextInt();
+		    mul=a*b;
+		}
+		catch(InputMismatchException e) {
+			System.out.println("Exception Handled ==> "+e);
+			throw e;
+		}
+		finally{
+		System.out.println("Multiplication = "+mul);
+		}
+	}
+
+	public static void division() {
+		Scanner scanner=null;
+		scanner=new Scanner(System.in);
+		
+		System.out.println("Enter two numbers for Division:");
+		int div=0;
+		try {
+			int a=scanner.nextInt();
+			int b=scanner.nextInt();
+			div=a/b;
+		}
+		catch(ArithmeticException e) {
+			System.out.println("Exception Handled ===> "+e);
+			throw e;
+		}
+		finally {
+			scanner.close();
+			System.out.println("Division = "+div);
+		}
 	}
 }
