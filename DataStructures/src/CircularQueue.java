@@ -52,7 +52,7 @@ public class CircularQueue {
 			}
 			else {
 				int f1=f;
-				for(int i=0;i<=count;i++) {
+				for(int i=1;i<=count;i++) {
 					System.out.print(cq[f1]+" ");
 					f1=(f1+1)%size;
 				}
